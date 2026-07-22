@@ -3,81 +3,120 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Pizzeria Rhodos i Hammarbyhöjden. Pizza för avhämtning och servering på Olaus Magnus väg 42 i Johanneshov." />
+  <meta name="description" content="Pizzeria Rhodos i Hammarbyhöjden. Pizza, avhämtning och vägbeskrivning till Olaus Magnus väg 42 i Johanneshov." />
   <title>Pizzeria Rhodos | Hammarbyhöjden</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Pizzeria Rhodos startsida">
       <span class="brand-mark">R</span>
-      <span><strong>RHODOS</strong><small>PIZZERIA · HAMMARBYHÖJDEN</small></span>
+      <span>
+        <strong>RHODOS</strong>
+        <small>PIZZERIA · HAMMARBYHÖJDEN</small>
+      </span>
     </a>
     <nav aria-label="Huvudmeny">
-      <a href="#om">Om oss</a>
+      <a href="#om">Om</a>
+      <a href="#mat">Mat</a>
       <a href="#hitta">Hitta hit</a>
       <a class="nav-cta" href="tel:+4686595010">Ring & beställ</a>
     </nav>
   </header>
-  <main id="top">
-    <section class="hero">
-      <div class="hero-overlay"></div>
+
+  <main id="main">
+    <section class="hero" id="top">
       <div class="hero-content">
-        <p class="eyebrow">DIN KVARTERSPIZZERIA I HAMMARBYHÖJDEN</p>
-        <h1>En riktigt god pizza.<br><em>Nära dig.</em></h1>
-        <p class="lead">Välkommen till Pizzeria Rhodos på Olaus Magnus väg 42. Ät hos oss eller ring och beställ för avhämtning.</p>
-        <div class="hero-actions">
+        <p class="eyebrow">PIZZA · AVHÄMTNING · SERVERING</p>
+        <h1>Pizzeria Rhodos i Hammarbyhöjden</h1>
+        <p class="lead">Kvarterspizzerian på Olaus Magnus väg 42. Här blir det enkelt att ringa, hitta hit och se öppettider direkt.</p>
+        <div class="hero-actions" aria-label="Snabba val">
           <a class="button primary" href="tel:+4686595010">Ring 08-659 50 10</a>
-          <a class="button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Olaus+Magnus+v%C3%A4g+42%2C+121+38+Johanneshov" target="_blank" rel="noreferrer">Visa vägen</a>
-        </div>
-        <div class="quick-info">
-          <div><span>ÖPPET ALLA DAGAR</span><strong>11:00-22:00</strong></div>
-          <div><span>ADRESS</span><strong>Olaus Magnus väg 42</strong></div>
-          <div><span>PUBLIKT LISTAT</span><strong>4,1 på Google</strong></div>
+          <a class="button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Olaus+Magnus+v%C3%A4g+42%2C+121+38+Johanneshov" target="_blank" rel="noopener noreferrer">Visa vägen i Google Maps</a>
         </div>
       </div>
+      <div class="quick-info" aria-label="Snabb information">
+        <div><span>Öppet</span><strong>11:00-22:00</strong><small>bekräfta vid beställning</small></div>
+        <div><span>Adress</span><strong>Olaus Magnus väg 42</strong><small>121 38 Johanneshov</small></div>
+        <div><span>Ring</span><strong>08-659 50 10</strong><small>för avhämtning</small></div>
+      </div>
     </section>
+
     <section class="intro" id="om">
       <div>
-        <p class="eyebrow dark">LOKALT I OMRÅDET</p>
-        <h2>Lokalt, enkelt<br>och gott.</h2>
+        <p class="eyebrow dark">LOKAL NÄRVARO</p>
+        <h2>En sida som gör vardagsvalet enkelt.</h2>
       </div>
       <div class="intro-copy">
-        <p>Rhodos är kvarterspizzerian för en snabb lunch, en enkel middag eller något gott att ta med hem. Här möts du av klassisk pizzeriakänsla, personlig service och mat lagad för att göra vardagen lite godare.</p>
-        <a class="text-link" href="tel:+4686595010">Beställ via telefon <span>→</span></a>
+        <p>För en lokal pizzeria ska hemsidan vara snabb, tydlig och lätt att använda. Den här prototypen lyfter det viktigaste först: telefon, adress, öppettider, vägvisning och vad gästen kan förvänta sig.</p>
+        <a class="text-link" href="#hitta">Se adress och karta <span aria-hidden="true">→</span></a>
       </div>
     </section>
-    <section class="feature-grid" aria-label="Vad vi erbjuder">
-      <article class="feature feature-pizza"><span>01</span><div><h3>Pizza</h3><p>Klassiska favoriter och generösa pizzor för både lunch och middag.</p></div></article>
-      <article class="feature feature-takeaway"><span>02</span><div><h3>Avhämtning</h3><p>Ring in din beställning så gör vi den redo att ta med.</p></div></article>
-      <article class="feature feature-local"><span>03</span><div><h3>Kvarterskänsla</h3><p>Nära Skärmarbrink, Gullmarsplan och Hammarbyhöjden.</p></div></article>
+
+    <section class="service-band" id="mat" aria-label="Mat och service">
+      <article>
+        <span>01</span>
+        <h3>Klassiska pizzor</h3>
+        <p>Ren och aptitlig presentation för pizza, lunch och middag utan att låtsas ha en bekräftad meny.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Ring för avhämtning</h3>
+        <p>Telefonknappar på rätt platser gör sidan användbar direkt, särskilt på mobil.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Hitta hit snabbt</h3>
+        <p>Karta, adress och vägbeskrivning är nära till hands för kunder i Hammarbyhöjden.</p>
+      </article>
     </section>
+
+    <section class="photo-grid" aria-label="Restaurangkänsla">
+      <div class="photo photo-dough"></div>
+      <div class="photo-copy">
+        <p class="eyebrow dark">MODERN MEN ENKEL</p>
+        <h2>Mer restaurangkänsla, mindre krångel.</h2>
+        <p>Sidan använder stora matbilder, tydliga kontraster och kort text. Det känns färdigt nog att visa, men behåller prototypstatus tills Rhodos godkänner uppgifterna.</p>
+      </div>
+      <div class="photo photo-table"></div>
+    </section>
+
     <section class="visit" id="hitta">
       <div class="visit-card">
         <p class="eyebrow dark">BESÖK OSS</p>
-        <h2>Vi finns mitt i<br>Hammarbyhöjden.</h2>
+        <h2>Mitt i Hammarbyhöjden.</h2>
         <dl>
           <div><dt>Adress</dt><dd>Olaus Magnus väg 42<br>121 38 Johanneshov</dd></div>
           <div><dt>Telefon</dt><dd><a href="tel:+4686595010">08-659 50 10</a></dd></div>
           <div><dt>Öppettider</dt><dd>Måndag-Söndag<br>11:00-22:00</dd></div>
+          <div><dt>Status</dt><dd>Publika uppgifter. Bör bekräftas av restaurangen före officiell lansering.</dd></div>
         </dl>
-        <a class="button primary dark-button" href="https://www.google.com/maps/dir/?api=1&destination=Olaus+Magnus+v%C3%A4g+42%2C+121+38+Johanneshov" target="_blank" rel="noreferrer">Öppna i Google Maps</a>
+        <div class="visit-actions">
+          <a class="button primary dark-button" href="tel:+4686595010">Ring nu</a>
+          <a class="button outline-button" href="https://www.google.com/maps/dir/?api=1&destination=Olaus+Magnus+v%C3%A4g+42%2C+121+38+Johanneshov" target="_blank" rel="noopener noreferrer">Öppna karta</a>
+        </div>
       </div>
       <div class="map-wrap">
         <iframe title="Karta till Pizzeria Rhodos" src="https://www.google.com/maps?q=Olaus%20Magnus%20v%C3%A4g%2042%2C%20121%2038%20Johanneshov&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
+
   <footer>
     <a class="brand footer-brand" href="#top">
       <span class="brand-mark">R</span>
-      <span><strong>RHODOS</strong><small>PIZZERIA · HAMMARBYHÖJDEN</small></span>
+      <span>
+        <strong>RHODOS</strong>
+        <small>PIZZERIA · HAMMARBYHÖJDEN</small>
+      </span>
     </a>
     <p>Olaus Magnus väg 42 · 121 38 Johanneshov · <a href="tel:+4686595010">08-659 50 10</a></p>
-    <p class="disclaimer">Prototypsida framtagen som designförslag. Uppgifter bör bekräftas av restaurangen före officiell lansering.</p>
+    <p class="disclaimer">Prototypsida framtagen som designförslag. Detta är inte restaurangens officiella webbplats. Uppgifter bör bekräftas av restaurangen före officiell lansering.</p>
   </footer>
 </body>
 </html>
